@@ -17,7 +17,7 @@
             $array1[4] = 44;
 
             for ($i = 0 ; $i < 5 ; ++$i) {
-                print(’$array1[’.$i.’] = ’. $array1[$i]." <br>\n");
+                print('$array1['.$i.'] = '. $array1[$i]." <br>\n");
             }
 
             $array2 = array();
@@ -26,7 +26,7 @@
             $array2["information"] = "Jouhou";
 
             foreach ($array2 as $english => $japanese) {
-                print(’$array2[’.$english.’] = ’. $japanese." <br>\n");
+                print('$array2['.$english.'] = '. $japanese." <br>\n");
             }
 
         ?>

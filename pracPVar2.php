@@ -16,17 +16,17 @@
             print("$k = " . $k . "<br> \n");
             print("$k = " . (int)$k . "<br> \n");
 
-            print(’sin($k) = ’ . sin($k) . "<br> \n");
+            print('sin($k) = ' . sin($k) . "<br> \n");
 
             print("sin($k) = " . sin($k) . "<br> \n");
 
-            print(’aaa \n’);
+            print('aaa \n’');
             print(" xxx\n");
 
             $l = $j % $i;
-            print(’$l = ’ . $l . "<br> \n");
+            print('$l = ' . $l . "<br> \n");
 
-            $k = ’abcd’;
+            $k = 'abcd';
             $l = "efgh\n";
 
             print($k.$l);

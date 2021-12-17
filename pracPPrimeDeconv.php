@@ -44,9 +44,7 @@
 
                 for ($i = 0 ; $i < count($prime_list) ; ++$i) {
                     $prime = $prime_list[$i];
-                    for ($j = 0 ; $j < count($prime) ; ++$j) {
-                        printf("%d = %d ^ %d <br>\n", $n1, $prime[0], $prime[1]);
-                    }
+                    printf("%d = %d ^ %d <br>\n", $n1, $prime_list[$i][0], $prime_list[$i][1]);
                 }
             }
         ?>

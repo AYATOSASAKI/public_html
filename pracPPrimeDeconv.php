@@ -19,7 +19,7 @@
                 $n1 = (int) $_POST["num"];
                 $prime_list = array();
                 $temp = $n1;
-                for ($i = 2 ; $i <= round($n1**0.5) ; ++$i) {
+                for ($i = 2 ; $i < round($n1**0.5) ; ++$i) {
                     if($temp % $i == 0) {
                         $cnt = 0;
                         $prime_n_count = array();
@@ -33,7 +33,7 @@
                 }
                 if ($temp != 1){
                     $arr = array();
-                    array_push($arr, $temp, $i);
+                    array_push($arr, $n1, 1);
                     array_push($prime_list, $arr);
                 }
                 if (empty($prime_list)){

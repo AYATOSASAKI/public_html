@@ -44,7 +44,11 @@
 
                 printF("%d = ", $n1);
                 for ($i = 0 ; $i < count($prime_list) ; ++$i) {
-                    printf("%d ^ %d  x  ", $n1, $prime_list[$i][0], $prime_list[$i][1]);
+                    if ($i < count($prime_list)-1){
+                        printf("%d ^ %d  x  ", $prime_list[$i][0], $prime_list[$i][1]);
+                    }else{
+                        printf("%d ^ %d", $prime_list[$i][0], $prime_list[$i][1]);
+                    }
                 }
             }
         ?>

@@ -33,7 +33,7 @@
                 }
                 if ($temp != 1){
                     $arr = array();
-                    array_push($arr, $n1, 1);
+                    array_push($arr, $temp, 1);
                     array_push($prime_list, $arr);
                 }
                 if (empty($prime_list)){

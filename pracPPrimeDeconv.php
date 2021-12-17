@@ -43,8 +43,9 @@
                 }
 
                 for ($i = 0 ; $i < count($prime_list) ; ++$i) {
-                    for ($j = 0 ; $j < count($prime_list[$i][$j]) ; ++$j) {
-                        print('$prime_list['.$i.']['.$j.'] = '. $prime_list[$i][$j]." <br>\n");
+                    $prime = $prime_list[$i];
+                    for ($j = 0 ; $j < count($prime) ; ++$j) {
+                        printf("%d = %d ^ %d <br>\n", $n1, $prime[0], $prime[1]);
                     }
                 }
             }

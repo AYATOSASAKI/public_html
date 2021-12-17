@@ -19,18 +19,18 @@
             print(’sin($k) = ’ . sin($k) . "<br> \n");
 
             print("sin($k) = " . sin($k) . "<br> \n");
-    
+
             print(’aaa \n’);
             print(" xxx\n");
-    
+
             $l = $j % $i;
             print(’$l = ’ . $l . "<br> \n");
-    
+
             $k = ’abcd’;
             $l = "efgh\n";
-    
+
             print($k.$l);
-    
+
         ?>
     </body>
 </html>

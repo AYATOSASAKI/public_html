@@ -1,0 +1,40 @@
+h1 {
+    background-color: #ff8080;
+    color: green;
+}
+    
+h2 {
+    background-color: #8080ff;
+    color: red;
+}
+
+h2:hover {
+    background-color: #000000;
+    color: #0000ff;
+}
+
+table {
+    border: solid 3px red;
+}
+
+td {
+    color: green;
+    border: dashed 2px #204040;
+}
+
+/* id selector */
+#listnonaka {
+    color: #a00080;
+}
+
+#tablenonaka {
+    color: red;
+    background-color: #a0a0a0;
+}
+
+/* class selector */
+.hahahaha {
+    text-align: center;
+    color: #0000ff;
+    font-size: xx-large;
+}

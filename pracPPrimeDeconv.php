@@ -42,9 +42,9 @@
                     array_push($prime_list, $arr);
                 }
 
+                printF("%d = ", $n1);
                 for ($i = 0 ; $i < count($prime_list) ; ++$i) {
-                    $prime = $prime_list[$i];
-                    printf("%d = %d ^ %d <br>\n", $n1, $prime_list[$i][0], $prime_list[$i][1]);
+                    printf("%d ^ %d  x  ", $n1, $prime_list[$i][0], $prime_list[$i][1]);
                 }
             }
         ?>

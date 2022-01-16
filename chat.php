@@ -1,3 +1,22 @@
+<?php
+    $hand = $_GET["message"];
+    switch ($hand){
+        case "rock":
+            $hand = "paper";
+            break;
+        case "paper":
+            $hand = "scissor";
+            break;
+        case "scissor":
+            $hand = "rock";
+            break;
+        default:
+            $hand = "What is that ?";
+            break;
+        }
+    var_dump($hand);
+?>    
+
 <!DOCTYPE html>
 <html>
     <head>
@@ -15,27 +34,7 @@
             <div id="form_style" class="form_style">
                 <form action="chat.php" method="GET" id="form" class="form">
                     <input type="text" name="message" class="text">
-                    <input type="submit" name="send" value="send">
-                    <?php
-                        $abc = "a";
-                        $abc = $_GET['message'];;
-                        $hand = $_POST["word"];
-                        switch ($hand){
-                            case "rock":
-                                $hand = "paper";
-                                break;
-                            case "paper":
-                                $hand = "scissor";
-                                break;
-                            case "scissor":
-                                $hand = "rock";
-                                break;
-                            default:
-                                $hand = "What is that ?";
-                                break;
-                            }
-                        var_dump($abc);
-                    ?>          
+                    <input type="submit" name="send" value="send">      
                 </form>
             </div>
         </section>

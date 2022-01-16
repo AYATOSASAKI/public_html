@@ -16,30 +16,29 @@
                 <form action="chat.php" method="POST" id="form" class="form">
                     <input type="text" name="message" class="text">
                     <input type="submit" name="send" value="send">
+                    <?php
+                        $abc = "a";
+                        $abc = $_POST["message"];
+                        $hand = $_POST["word"];
+                        switch ($hand){
+                            case "rock":
+                                $hand = "paper";
+                                break;
+                            case "paper":
+                                $hand = "scissor";
+                                break;
+                            case "scissor":
+                                $hand = "rock";
+                                break;
+                            default:
+                                $hand = "What is that ?";
+                                break;
+                            }
+                        var_dump($abc);
+                    ?>          
                 </form>
             </div>
         </section>
-
-        <?php
-            $abc = "a";
-            $abc = $_POST["message"];
-            $hand = $_POST["word"];
-            switch ($hand){
-                case "rock":
-                    $hand = "paper";
-                    break;
-                case "paper":
-                    $hand = "scissor";
-                    break;
-                case "scissor":
-                    $hand = "rock";
-                    break;
-                default:
-                    $hand = "What is that ?";
-                    break;
-                }
-            var_dump($abc);
-        ?>
 
         <script>
             'use strict';

@@ -49,7 +49,7 @@
                 let user_item = `<p class="user_item">${user_input}</p>`;
                 document.getElementById('chat_ul').insertAdjacentHTML('beforeend', user_item);
                 
-                let bot_hand = '<?php echo $abc; ?>';
+                let bot_hand = "<?php echo $abc; ?>";
                 let bot_item = `<p class="bot_item">${bot_hand}</p>`;
                 const bot = () => {
                     document.getElementById('chat_ul').insertAdjacentHTML('beforeend', bot_item);

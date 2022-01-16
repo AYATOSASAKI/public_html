@@ -22,15 +22,20 @@
             <?php
                 if (isset($_POST["send"])){
                     $hand = $_POST["word"];
-                    if ($hand = 'rock'){
-                        $reaction = 'paper';
-                    }else if($hand = 'scissor'){
-                        $reaction = 'rock';
-                    }else if($hand = 'paper'){
-                        $reaction = 'scissor';
-                    }else{
-                        $reaction = 'What is this ?';
-                    }
+                    switch ($hand){
+                        case 'rock':
+                            $reaction = 'paper';
+                            break;
+                        case 'paper':
+                            $reaction = 'scissor';
+                            break;
+                        case 'scissor':
+                            $reaction = 'rock';
+                            break;
+                        default:
+                            $reaction = 'What is that ?';
+                            break;
+                        }
                     $bot_hand = $reaction;
                 }
             ?>

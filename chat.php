@@ -17,7 +17,7 @@
             </div>
 
             <div id="form_style" class="form_style">
-                <form action="chat.php" method="GET" id="form" class="form">
+                <form action="chat.php" method="POST" id="form" class="form">
                     <input type="text" name="message" class="text">
                     <input type="submit" name="send" value="send">      
                 </form>
@@ -48,7 +48,7 @@
 </html>
 
 <?php
-    $hand = $_GET["message"];
+    $hand = $_POST["message"];
     switch ($hand){
         case "rock":
             $hand = "paper";

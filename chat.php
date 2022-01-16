@@ -20,7 +20,7 @@
             </div>
 
             <?php
-                $hand = filter_input(INPUT_POST, "message");
+                $hand = $_POST["message"];
                 switch ($hand){
                     case "rock":
                         $hand = "paper";

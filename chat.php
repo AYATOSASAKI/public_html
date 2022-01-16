@@ -39,13 +39,13 @@
 
         <script>
             'use strict';
-            let bot_hand_js = '<?php echo $bot_hand; ?>';
             document.getElementById('form').onsubmit = function(event){
                 event.preventDefault();
                 const user_input = document.getElementById('form').word.value;
                 let user_item = `<p class="user_item">${user_input}</p>`;
                 document.getElementById('chat_ul').insertAdjacentHTML('beforeend', user_item);
                 
+                let bot_hand_js = '<?php echo $bot_hand; ?>';
                 let bot_item = `<p class="bot_item">${bot_hand_js}</p>`;
                 const bot = () => {
                     document.getElementById('chat_ul').insertAdjacentHTML('beforeend', bot_item);

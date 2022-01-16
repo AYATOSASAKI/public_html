@@ -23,14 +23,15 @@
                 if (isset($_POST["send"])){
                     $hand = $_POST["word"];
                     if ($hand = 'rock'){
-                        $bot_hand = 'paper';
+                        $reaction = 'paper';
                     }else if($hand = 'scissor'){
-                        $bot_hand = 'rock';
+                        $reaction = 'rock';
                     }else if($hand = 'paper'){
-                        $bot_hand = 'scissor';
+                        $reaction = 'scissor';
                     }else{
-                        $bot_hand = 'What is this ?';
+                        $reaction = 'What is this ?';
                     }
+                    $bot_hand = $reaction;
                 }
             ?>
         </section>

@@ -20,22 +20,21 @@
             </div>
 
             <?php
-                $abc = "";
                 $abc = $_POST["word"];
                 if (isset($_POST["send"])){
                     $hand = $_POST["word"];
                     switch ($hand){
-                        case 'rock':
-                            $hand = 'paper';
+                        case "rock":
+                            $hand = "paper";
                             break;
-                        case 'paper':
-                            $hand = 'scissor';
+                        case "paper":
+                            $hand = "scissor";
                             break;
-                        case 'scissor':
-                            $hand = 'rock';
+                        case "scissor":
+                            $hand = "rock";
                             break;
                         default:
-                            $hand = 'What is that ?';
+                            $hand = "What is that ?";
                             break;
                         }
                 }
@@ -50,8 +49,8 @@
                 let user_item = `<p class="user_item">${user_input}</p>`;
                 document.getElementById('chat_ul').insertAdjacentHTML('beforeend', user_item);
                 
-                let bot_hand_js = '<?php $abc; ?>';
-                let bot_item = `<p class="bot_item">${bot_hand_js}</p>`;
+                var bot_hand = <?php echo $abc; ?>;
+                let bot_item = `<p class="bot_item">${bot_hand}</p>`;
                 const bot = () => {
                     document.getElementById('chat_ul').insertAdjacentHTML('beforeend', bot_item);
                     scrollBy(0, 1000);

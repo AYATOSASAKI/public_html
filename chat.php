@@ -48,7 +48,7 @@
 </html>
 
 <?php
-    $hand = $_POST["message"];
+    $hand = filter_input(INPUT_POST, "dat");
     switch ($hand){
         case "rock":
             $hand = "paper";

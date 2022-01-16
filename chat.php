@@ -38,7 +38,7 @@
                             break;
                         }
                 }
-                printf("%s", $abc)
+                printf("%s", $abc);
             ?>
         </section>
 

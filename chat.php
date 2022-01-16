@@ -32,7 +32,6 @@
                     }else{
                         $bot_hand = 'What is this ?';
                     }
-                    printf("%s", $bot_hand);
                 }
             ?>
         </section>

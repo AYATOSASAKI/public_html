@@ -22,7 +22,7 @@
             <?php
             print("a");
                 if (isset($_POST["send"])){
-                    $hand = (str) $_POST["word"];
+                    $hand = $_POST["word"];
                     if ($hand = 'rock'){
                         $bot_hand = 'paper';
                     }else if($hand = 'scissor'){

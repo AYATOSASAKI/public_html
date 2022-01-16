@@ -18,30 +18,30 @@
                     <input type="submit" name="send" value="send">
                 </form>
             </div>
-
-            <?php
-                $abc = "a";
-                $abc = $_POST["word"];
-                if (isset($_POST["send"])){
-                    $hand = $_POST["word"];
-                    switch ($hand){
-                        case "rock":
-                            $hand = "paper";
-                            break;
-                        case "paper":
-                            $hand = "scissor";
-                            break;
-                        case "scissor":
-                            $hand = "rock";
-                            break;
-                        default:
-                            $hand = "What is that ?";
-                            break;
-                        }
-                }
-                var_dump($abc);
-            ?>
         </section>
+
+        <?php
+            $abc = "a";
+            $abc = $_POST["word"];
+            if (isset($_POST["send"])){
+                $hand = $_POST["word"];
+                switch ($hand){
+                    case "rock":
+                        $hand = "paper";
+                        break;
+                    case "paper":
+                        $hand = "scissor";
+                        break;
+                    case "scissor":
+                        $hand = "rock";
+                        break;
+                    default:
+                        $hand = "What is that ?";
+                        break;
+                    }
+            }
+            var_dump($abc);
+        ?>
 
         <script>
             'use strict';

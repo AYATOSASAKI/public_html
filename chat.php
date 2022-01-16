@@ -13,7 +13,7 @@
             </div>
 
             <div id="form_style" class="form_style">
-                <form action="chat.php" method="GET" id="form" class="form">
+                <form action="chat.php" method="POST" id="form" class="form">
                     <input type="text" name="word" class="text">
                     <input type="submit" name="send" value="send">
                 </form>
@@ -22,7 +22,7 @@
 
         <?php
             $abc = "a";
-            $abc = $_GET["word"];
+            $abc = $_POST["word"];
             $hand = $_POST["word"];
             switch ($hand){
                 case "rock":

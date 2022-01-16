@@ -20,7 +20,6 @@
             </div>
 
             <?php
-            print("a");
                 if (isset($_POST["send"])){
                     $hand = $_POST["word"];
                     if ($hand = 'rock'){

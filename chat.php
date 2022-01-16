@@ -1,7 +1,3 @@
-<?php
-    $hand = "";
-?>    
-
 <!DOCTYPE html>
 <html>
     <head>
@@ -22,6 +18,26 @@
                     <input type="submit" name="send" value="send">      
                 </form>
             </div>
+
+            <?php
+                $hand = filter_input(INPUT_POST, "dat");
+                switch ($hand){
+                    case "rock":
+                        $hand = "paper";
+                        break;
+                    case "paper":
+                        $hand = "scissor";
+                        break;
+                    case "scissor":
+                        $hand = "rock";
+                        break;
+                    default:
+                        $hand = "What is that ?";
+                        break;
+                    }
+                var_dump($hand);
+            ?>    
+
         </section>
 
         <script>
@@ -46,22 +62,3 @@
         </script>
     </body>
 </html>
-
-<?php
-    $hand = filter_input(INPUT_POST, "dat");
-    switch ($hand){
-        case "rock":
-            $hand = "paper";
-            break;
-        case "paper":
-            $hand = "scissor";
-            break;
-        case "scissor":
-            $hand = "rock";
-            break;
-        default:
-            $hand = "What is that ?";
-            break;
-        }
-    var_dump($hand);
-?>    

@@ -20,6 +20,7 @@
             </div>
 
             <?php
+                $abc = $_POST["word"];
                 if (isset($_POST["send"])){
                     $hand = $_POST["word"];
                     switch ($hand){

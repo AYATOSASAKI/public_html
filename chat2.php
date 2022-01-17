@@ -40,7 +40,6 @@
             </div>
         </section>
 
-        <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script> 
         <script>
             'use strict';
             document.getElementById('form').onsubmit = function(event){

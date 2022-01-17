@@ -45,7 +45,6 @@
         <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script> 
         <script>
             'use strict';
-            
             document.getElementById('form').onsubmit = function(event){
                 event.preventDefault();
                 const user_input = document.getElementById('form').message.value;
@@ -62,6 +61,7 @@
                 form.reset();
                 scrollBy(0, 1000);
             };
+            $('form').submit();
         </script>
     </body>
 </html>

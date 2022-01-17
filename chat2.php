@@ -44,7 +44,6 @@
                 setTimeout(bot, 300);
                 form.reset();
                 scrollBy(0, 1000);
-                bot_res = "<?php res(); ?>";
             };
         </script>
     </body>

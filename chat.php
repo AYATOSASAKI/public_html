@@ -63,5 +63,10 @@
                 scrollBy(0, 1000);
             };
         </script>
+
+        <?php
+            var_dump($hand);
+            var_dump($reaction);
+        ?>
     </body>
 </html>

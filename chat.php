@@ -62,7 +62,7 @@
                 form.reset();
                 scrollBy(0, 1000);
             };
-            $('form').submit();
+            //$('form').submit();
         </script>
     </body>
 </html>

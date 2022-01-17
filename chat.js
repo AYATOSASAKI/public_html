@@ -11,8 +11,8 @@ document.getElementById('form').onsubmit = function(event){
         document.getElementById('chat_ul').insertAdjacentHTML('beforeend', bot_item);
         scrollBy(0, 1000);
     };
-    setTimeout(bot, 300);
+    //setTimeout(bot, 300);
 
     form.reset();
-    //scrollBy(0, 1000);
+    scrollBy(0, 1000);
 };

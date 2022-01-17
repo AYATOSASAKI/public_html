@@ -42,18 +42,16 @@
             }
         ?>
 
-        <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script> 
+        <script src="https://code.jquery.com/jquery-3.4.1.min.js">$('form').submit();</script> 
         <script>
             'use strict';
             
             document.getElementById('form').onsubmit = function(event){
-                
                 event.preventDefault();
                 const user_input = document.getElementById('form').message.value;
                 let user_item = `<p class="user_item">${user_input}</p>`;
                 document.getElementById('chat_ul').insertAdjacentHTML('beforeend', user_item);
 
-                
                 //let bot_hand = '<?php echo $hand; ?>';
                 let bot_item = `<p class="bot_item">${user_input}</p>`;
                 const bot = () => {
@@ -61,10 +59,8 @@
                     scrollBy(0, 1000);
                 };
                 setTimeout(bot, 300);
-            
                 form.reset();
                 scrollBy(0, 1000);
-                $('form').submit();
             };
         </script>
     </body>

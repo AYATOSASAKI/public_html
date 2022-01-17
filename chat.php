@@ -43,13 +43,6 @@
         ?>
 
         <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script> 
-        <!--jQueryの読み込みの後に、以下のコードを追加 -->
-        <script>
-          $(function() {
-            alert("jQueryが正常に動作しています！");
-          });
-        </script>
-
         <script>
             'use strict';
             document.getElementById('form').onsubmit = function(event){

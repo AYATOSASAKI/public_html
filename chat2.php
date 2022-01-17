@@ -1,23 +1,3 @@
-<?php
-    function res(){
-        $num = rand(0, 3);
-        switch ($num){
-            case 0:
-                echo "Hi";
-                break;
-            case 1:
-                echo "Hello";
-                break;
-            case 2:
-                echo "I'm a chatbot";
-                break;
-            case 3:
-                echo "What is that ?";
-                break;
-            }
-    }
-?>
-
 <!DOCTYPE html>
 <html>
     <head>
@@ -48,8 +28,8 @@
                 let user_item = `<p class="user_item">${user_input}</p>`;
                 document.getElementById('chat_ul').insertAdjacentHTML('beforeend', user_item);
 
-                let bot_res = "<?php res(); ?>";
-                let bot_item = `<p class="bot_item">${bot_res}</p>`;
+                let bot_res = "<?php echo 'you said ' ?>";
+                let bot_item = `<p class="bot_item">${bot_res}${user_input.length} words</p>`;
                 const bot = () => {
                     document.getElementById('chat_ul').insertAdjacentHTML('beforeend', bot_item);
                     scrollBy(0, 1000);

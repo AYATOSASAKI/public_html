@@ -1,7 +1,7 @@
 <?php
     $error = False;
-    $htmlStr = ’’;
-    $mysqli = new mysqli(’localhost’, ’00M00000’, ’(password)’, ’00M00000’);
+    $htmlStr = '';
+    $mysqli = new mysqli('localhost', '21M51651', 'nf8ZVxsU', '21M51651');
     /* 接続状況をチェックします */
     if ($mysqli->connect_errno) {
         $htmlStr .= "<font color=\"red\">".$mysqli->connect_error;"</font>";

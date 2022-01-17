@@ -13,7 +13,7 @@
             </div>
 
             <div id="form_style" class="form_style">
-                <form action="chat.php" method="POST" id="form" class="form">
+                <form method="POST" id="form" class="form">
                     <input type="text" name="message" class="text">
                     <input type="submit" name="send_button" value="send">      
                 </form>

@@ -22,7 +22,7 @@
 
          
         <?php
-            /*if (isset($_POST["send"])) {
+            if (isset($_POST["send"])) {
                 $hand = $_POST["message"];
                 switch ($hand){
                     case "rock":
@@ -40,7 +40,7 @@
                     }
                 var_dump($hand);
                 var_dump($reaction);
-            }*/
+            }
         ?>
 
         <script>

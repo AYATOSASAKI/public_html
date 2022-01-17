@@ -1,6 +1,6 @@
 <?php 
     function sv(){
-        echo 'Your text length is';
+        echo 'Bot :    Your text length is';
     }
 ?>
 
@@ -31,7 +31,7 @@
             document.getElementById('form').onsubmit = function(event){
                 event.preventDefault();
                 const user_input = document.getElementById('form').message.value;
-                let user_item = `<p class="user_item">${user_input}</p>`;
+                let user_item = `<p class="user_item">You :    ${user_input}</p>`;
                 document.getElementById('chat_ul').insertAdjacentHTML('beforeend', user_item);
 
                 let bot_res = "<?php sv(); ?>";

@@ -42,7 +42,7 @@
             }
         ?>
 
-        <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js">
+        <script>
             'use strict';
             document.getElementById('form').onsubmit = function(event){
                 event.preventDefault();

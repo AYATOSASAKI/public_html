@@ -38,7 +38,7 @@
                         $reaction = "What is that ?";
                         break;
                     }
-                var_dump($hand);
+                var_dump($_POST["message"]);
                 var_dump($reaction);
             }
         ?>

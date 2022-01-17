@@ -1,6 +1,6 @@
 'use strict';
 document.getElementById('form').onsubmit = function(event){
-    event.preventDefault();
+    //event.preventDefault();
     const user_input = document.getElementById('form').message.value;
     let user_item = `<p class="user_item">${user_input}</p>`;
     document.getElementById('chat_ul').insertAdjacentHTML('beforeend', user_item);
@@ -11,7 +11,7 @@ document.getElementById('form').onsubmit = function(event){
         document.getElementById('chat_ul').insertAdjacentHTML('beforeend', bot_item);
         scrollBy(0, 1000);
     };
-    //setTimeout(bot, 300);
+    setTimeout(bot, 300);
 
     form.reset();
     scrollBy(0, 1000);

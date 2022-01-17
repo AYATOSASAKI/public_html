@@ -22,7 +22,8 @@
 
          
         <?php
-            $hand = filter_input(INPUT_POST,"message");
+            if (isset($_POST["send"])) {
+            $hand = $_POST["message"];
             switch ($hand){
                 case "rock":
                     $reaction = "paper";

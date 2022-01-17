@@ -1,6 +1,6 @@
 <?php 
     function sv(){
-        echo 'you said';
+        echo 'You said';
     }
 ?>
 
@@ -35,8 +35,8 @@
                 document.getElementById('chat_ul').insertAdjacentHTML('beforeend', user_item);
 
                 let bot_res = "<?php sv(); ?>";
-                //let word_count = user_input.length;
-                let bot_item = `<p class="bot_item">${bot_res}</p>`;
+                let word_count = user_input.length;
+                let bot_item = `<p class="bot_item">${bot_res} ${word_count} words.</p>`;
                 const bot = () => {
                     document.getElementById('chat_ul').insertAdjacentHTML('beforeend', bot_item);
                     scrollBy(0, 1000);

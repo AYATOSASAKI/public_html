@@ -1,6 +1,6 @@
 <?php
     function res(){
-        $num = int rand(0, 3);
+        $num = rand(0, 3);
         switch ($num){
             case 0:
                 echo "Hi";

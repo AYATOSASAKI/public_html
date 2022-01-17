@@ -65,7 +65,7 @@
                 scrollBy(0, 1000);
             
             };
-            event.off();
+            //event.off();
         </script>
     </body>
 </html>

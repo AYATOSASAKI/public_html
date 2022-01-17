@@ -1,6 +1,6 @@
 <?php
     function res(){
-        $num = int rand (0, 3)
+        $num = int rand(0, 3);
         switch ($num){
             case 0:
                 echo "Hi";
@@ -49,7 +49,7 @@
                 let user_item = `<p class="user_item">${user_input}</p>`;
                 document.getElementById('chat_ul').insertAdjacentHTML('beforeend', user_item);
 
-                let bot_res = "<?php res(); ?>"
+                let bot_res = "<?php res(); ?>";
                 let bot_item = `<p class="bot_item">${bot_res}</p>`;
                 const bot = () => {
                     document.getElementById('chat_ul').insertAdjacentHTML('beforeend', bot_item);

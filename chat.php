@@ -43,5 +43,7 @@
             }
         ?>
 
+        <script src="chat.js" charset="utf-8"></script>
+
     </body>
 </html>

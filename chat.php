@@ -42,7 +42,7 @@
             ?>
         </section>
 
-        <!--<script src="chat.js" charset="utf-8"></script>-->
+        <script src="chat.js" charset="utf-8"></script>
 
     </body>
 </html>

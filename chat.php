@@ -39,7 +39,7 @@
                         $reaction = "What is that ?";
                         break;
                     }
-                //var_dump($hand);
+                var_dump($hand);
                 //var_dump($reaction);
             }
         ?>

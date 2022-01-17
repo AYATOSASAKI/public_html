@@ -51,7 +51,7 @@
                 let user_item = `<p class="user_item">${user_input}</p>`;
                 document.getElementById('chat_ul').insertAdjacentHTML('beforeend', user_item);
             
-                $('form').submit();
+                //$('form').submit();
                 //let bot_hand = '<?php echo $hand; ?>';
                 let bot_item = `<p class="bot_item">${user_input}</p>`;
                 
@@ -63,7 +63,6 @@
             
                 form.reset();
                 scrollBy(0, 1000);
-            
             };
         </script>
     </body>

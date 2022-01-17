@@ -15,6 +15,7 @@
                 echo "What is that ?";
                 break;
             }
+            $num = rand(0, 3);
     }
 ?>
 

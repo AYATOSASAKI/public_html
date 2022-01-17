@@ -15,31 +15,36 @@
             <div id="form_style" class="form_style">
                 <form method="GET" id="form" class="form">
                     <input type="text" name="message" class="text">
-                    <?php
-                        if (isset($_GET["send_button"])) {
-                            $hand = $_GET["message"];
-                            switch ($hand){
-                                case "rock":
-                                    $reaction = "paper";
-                                    break;
-                                case "paper":
-                                    $reaction = "scissor";
-                                    break;
-                                case "scissor":
-                                    $reaction = "rock";
-                                    break;
-                                default:
-                                    $reaction = "What is that ?";
-                                    break;
-                                }
-                            var_dump($hand);
-                            var_dump($reaction);
-                        }
-                    ?>
-                    <input type="submit" name="send_button" value="send">      
+                    <!--<input type="submit" name="send_button" value="send">-->
                 </form>
             </div>
         </section>
+
+        <?php
+            if (isset($_GET["send_button"])) {
+                $hand = $_GET["message"];
+                switch ($hand){
+                    case "rock":
+                        $reaction = "paper";
+                        break;
+                    case "paper":
+                        $reaction = "scissor";
+                        break;
+                    case "scissor":
+                        $reaction = "rock";
+                        break;
+                    default:
+                        $reaction = "What is that ?";
+                        break;
+                    }
+                var_dump($hand);
+                var_dump($reaction);
+            }
+        ?>
+
+        <form method="GET" id="form_button" class="form">
+            <input type="submit" name="send_button" value="send">      
+        </form>
 
         <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script> 
         <script>

@@ -50,6 +50,7 @@
                         printf("%d ^ %d", $prime_list[$i][0], $prime_list[$i][1]);
                     }
                 }
+                var_dump($_POST["num"]);
             }
         ?>
     </body>

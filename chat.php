@@ -20,8 +20,6 @@
             </div>
         </section>
 
-        <script src="chat.js" charset="utf-8"></script>
-
         <?php
             if (isset($_GET["send_button"])) {
                 $hand = $_GET["message"];
@@ -43,7 +41,7 @@
                 var_dump($reaction);
             }
         ?>
-        <script src="bot_js.js" charset="utf-8"></script>
+        <script src="chat.js" charset="utf-8"></script>
 
     </body>
 </html>

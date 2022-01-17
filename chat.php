@@ -21,7 +21,7 @@
         </section>
 
         <script src="chat.js" charset="utf-8"></script>
-        
+
         <?php
             if (isset($_POST["send_button"])) {
                 $hand = $_POST["message"];
@@ -39,8 +39,8 @@
                         $reaction = "What is that ?";
                         break;
                     }
-                var_dump($hand);
-                var_dump($reaction);
+                //var_dump($hand);
+                //var_dump($reaction);
             }
         ?>
     </body>

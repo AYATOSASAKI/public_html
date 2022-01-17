@@ -9,5 +9,5 @@ document.getElementById('form').onsubmit = function(event){
     form.reset();
     scrollBy(0, 1000);
 
-    event.off();
+    //event.off();
 };

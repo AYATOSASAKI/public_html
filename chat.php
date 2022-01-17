@@ -13,15 +13,15 @@
             </div>
 
             <div id="form_style" class="form_style">
-                <form method="POST" id="form" class="form">
+                <form method="GET" id="form" class="form">
                     <input type="text" name="message" class="text">
                     <input type="submit" name="send_button" value="send">      
                 </form>
             </div>
         </section>
         <?php
-            if (isset($_POST["send_button"])) {
-                $hand = $_POST["message"];
+            if (isset($_GET["send_button"])) {
+                $hand = $_GET["message"];
                 switch ($hand){
                     case "rock":
                         $reaction = "paper";

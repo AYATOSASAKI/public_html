@@ -25,19 +25,20 @@
                 $hand = $_POST["message"];
                 switch ($hand){
                     case "rock":
-                        $hand = "paper";
+                        $reaction = "paper";
                         break;
                     case "paper":
-                        $hand = "scissor";
+                        $reaction = "scissor";
                         break;
                     case "scissor":
-                        $hand = "rock";
+                        $reaction = "rock";
                         break;
                     default:
-                        $hand = "What is that ?";
+                        $reaction = "What is that ?";
                         break;
                     }
                 var_dump($hand);
+                var_dump($reaction);
             }
         ?>
 
@@ -49,7 +50,7 @@
                 let user_item = `<p class="user_item">${user_input}</p>`;
                 document.getElementById('chat_ul').insertAdjacentHTML('beforeend', user_item);
                 
-                let bot_hand = '<?php echo $hand; ?>';
+                let bot_hand = '<?php echo $reaction; ?>';
                 let bot_item = `<p class="bot_item">${bot_hand}</p>`;
                 const bot = () => {
                     document.getElementById('chat_ul').insertAdjacentHTML('beforeend', bot_item);

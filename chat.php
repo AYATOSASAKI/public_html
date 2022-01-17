@@ -19,6 +19,9 @@
                 </form>
             </div>
         </section>
+
+        <script src="chat.js" charset="utf-8"></script>
+        
         <?php
             if (isset($_POST["send_button"])) {
                 $hand = $_POST["message"];
@@ -40,7 +43,5 @@
                 var_dump($reaction);
             }
         ?>
-        <script src="chat.js" charset="utf-8"></script>
-
     </body>
 </html>

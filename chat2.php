@@ -1,3 +1,9 @@
+<?php 
+    function sv(){
+        echo 'you said';
+    }
+?>
+
 <!DOCTYPE html>
 <html>
     <head>
@@ -19,12 +25,6 @@
                 </form>
             </div>
         </section>
-
-        <?php 
-            function sv(){
-                echo 'you said';
-            }
-        ?>
 
         <script>
             'use strict';

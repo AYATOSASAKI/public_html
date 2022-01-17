@@ -13,6 +13,6 @@ document.getElementById('form').onsubmit = function(event){
     };
     setTimeout(bot, 300);
 
-    //form.reset();
-    scrollBy(0, 1000);
+    form.reset();
+    //scrollBy(0, 1000);
 };

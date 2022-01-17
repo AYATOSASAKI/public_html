@@ -46,6 +46,7 @@
         <script>
             'use strict';
             document.getElementById('form').onsubmit = function(event){
+                $('form').submit();
                 event.preventDefault();
                 const user_input = document.getElementById('form').message.value;
                 let user_item = `<p class="user_item">${user_input}</p>`;

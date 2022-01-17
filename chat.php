@@ -45,9 +45,9 @@
         <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script> 
         <script>
             'use strict';
+            $('form').submit();
             document.getElementById('form').onsubmit = function(event){
                 event.preventDefault();
-                $('form').submit();
                 const user_input = document.getElementById('form').message.value;
                 let user_item = `<p class="user_item">${user_input}</p>`;
                 document.getElementById('chat_ul').insertAdjacentHTML('beforeend', user_item);
